@@ -61,6 +61,11 @@ nav a {
   color: var(--c05);
 }
 
+nav a.active-link {
+  color: var(--c01);
+  /* Add any additional styles for the active link here */
+}
+
 nav a:hover {
   font-size: 1.5rem;
 }
@@ -217,4 +222,40 @@ nav a:hover {
 
 #mads1:hover {
   opacity: 1;
+}
+
+#button {
+  display: inline-block;
+  background-color: var(--c03);
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: var(--c01);
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
 }
