@@ -15,10 +15,40 @@ html {
   --c04: #4361ee;
   --c05: #4cc9f0;
   --c06: #fcfcfc;
+
+  /* font */
+  h1 {
+    font-family: font1;
+    font-size: 5rem;
+    padding-top: 150px;
+    padding-left: 20px;
+    color: var(--c01);
+  }
+
+  #info_h1 {
+    padding-top: 10%;
+    font-family: font1;
+    font-size: 20rem;
+    text-align: center;
+    color: var(--c01);
+  }
+
+  p {
+    font-family: font1;
+    font-size: 4rem;
+    text-align: center;
+    color: var(--c05);
+  }
 }
 
 section {
   scroll-snap-align: start;
+}
+
+@font-face {
+  font-family: font1;
+  src: url(/font/grinched_2.0_demo-webfont.woff);
+  src: url(/font/grinched_2.0_demo-webfont.woff2);
 }
 
 /* -------navigation------ */
@@ -44,6 +74,7 @@ nav {
   display: flex;
   justify-content: space-between;
   top: 0;
+  z-index: 10;
 }
 
 nav a {
@@ -61,9 +92,10 @@ nav a {
   color: var(--c05);
 }
 
-nav a.active-link {
+.active-link {
   color: var(--c01);
-  /* Add any additional styles for the active link here */
+  font-family: font1;
+  font-size: 1.5rem;
 }
 
 nav a:hover {
@@ -98,11 +130,15 @@ nav a:hover {
   background-image: url(/assets/k5.svg);
 }
 
+.link6:hover {
+  background-image: url(/assets/k3.svg);
+}
+
 /* --------section-------- */
 
 #section_1 {
   width: 100%;
-  height: 1000px;
+  height: 100vh;
   background-color: var(--c04);
   /* animation-duration: 6s;
   animation-name: rainbow;
@@ -112,40 +148,16 @@ nav a:hover {
   z-index: -99;
 }
 
-#section_1 h1 {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  text-align: center;
-  font-size: 5rem;
-  color: var(--c02);
-  animation: ease-in-out 1s;
-}
-
-@keyframes rainbow {
-  from {
-    right: 0;
-  }
-
-  0% {
-    background-color: var(--c06);
-  }
-  75% {
-    background-color: var(--c01);
-  }
-
-  100% {
-    background-color: var(--c06);
-  }
-
-  to {
-    left: 0;
-  }
+#info {
+  position: sticky;
+  z-index: 99;
 }
 
 /* spil  */
 
 #section_2 {
   width: 100%;
-  height: 1000px;
+  height: 100vh;
   background-color: var(--c06);
   /* animation-duration: 8s;
   animation-name: rainbow;
@@ -157,8 +169,8 @@ nav a:hover {
 
 #section_3 {
   width: 100%;
-  height: 1000px;
-  background-color: var(--c01);
+  height: 100vh;
+  background-color: var(--c04);
   /* animation-duration: 10s;
   animation-name: rainbow;
   animation-iteration-count: infinite;
@@ -167,7 +179,7 @@ nav a:hover {
 
 #section_4 {
   width: 100%;
-  height: 1000px;
+  height: 100vh;
   background-color: var(--c06);
   /* animation-duration: 12s;
   animation-name: rainbow;
@@ -177,7 +189,7 @@ nav a:hover {
 
 #section_5 {
   width: 100%;
-  height: 1000px;
+  height: 100vh;
   background-color: var(--c05);
   /* animation-duration: 12s;
   animation-name: rainbow;
@@ -185,9 +197,13 @@ nav a:hover {
   animation-direction: alternate; */
 }
 
+.new_color {
+  color: #4361ee;
+}
+
 #section_6 {
   width: 100%;
-  height: 1000px;
+  height: 100vh;
   background-color: var(--c06);
   /* animation-duration: 12s;
   animation-name: rainbow;
@@ -215,13 +231,13 @@ nav a:hover {
   position: relative;
   width: 100%;
   border-radius: 50px;
-  opacity: 0.8;
+  opacity: 1;
   z-index: 99;
   margin-bottom: -80%;
 }
 
 #mads1:hover {
-  opacity: 1;
+  transform: scale(1.1);
 }
 
 #button {
@@ -258,4 +274,46 @@ nav a:hover {
 #button.show {
   opacity: 1;
   visibility: visible;
+}
+
+/* animations */
+
+.animate {
+  -webkit-animation: tracking-in-expand-fwd 0.8s
+    cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1)
+    both;
+}
+
+@-webkit-keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+    transform: translateZ(-700px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+    transform: translateZ(-700px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
 }
