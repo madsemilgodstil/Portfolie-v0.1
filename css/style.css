@@ -4,10 +4,10 @@
   margin-right: 0;
   margin-bottom: 0;
   scroll-behavior: smooth;
-  scroll-snap-type: y;
 }
 
 html {
+  scroll-snap-type: y mandatory;
   /* colors  */
   --c01: #f72585;
   --c02: #7209b7;
@@ -15,6 +15,10 @@ html {
   --c04: #4361ee;
   --c05: #4cc9f0;
   --c06: #fcfcfc;
+}
+
+section {
+  scroll-snap-align: start;
 }
 
 /* -------navigation------ */
@@ -61,53 +65,34 @@ nav a:hover {
   font-size: 1.5rem;
 }
 
-#link1 {
+.link {
   position: sticky;
+  width: 7%;
+  background-repeat: no-repeat;
+  background-image: none;
+  aspect-ratio: 313/529;
+}
+
+.link1:hover {
   background-image: url(/assets/k1.svg);
-  aspect-ratio: 313/529;
-  width: 7%;
-  background-repeat: no-repeat;
 }
 
-#link2 {
-  position: sticky;
+.link2:hover {
   background-image: url(/assets/k2.svg);
-  aspect-ratio: 313/529;
-  width: 7%;
-  background-repeat: no-repeat;
 }
 
-#link3 {
-  position: sticky;
+.link3:hover {
   background-image: url(/assets/k3.svg);
-  aspect-ratio: 313/529;
-  width: 7%;
-  background-repeat: no-repeat;
 }
 
-#link4 {
-  position: sticky;
+.link4:hover {
   background-image: url(/assets/k4.svg);
-  aspect-ratio: 313/529;
-  width: 7%;
-  background-repeat: no-repeat;
 }
 
-#link5 {
-  position: sticky;
+.link5:hover {
   background-image: url(/assets/k5.svg);
-  aspect-ratio: 313/529;
-  width: 7%;
-  background-repeat: no-repeat;
 }
 
-#link6 {
-  position: sticky;
-  background-image: url(/assets/k6.svg);
-  aspect-ratio: 313/529;
-  width: 7%;
-  background-repeat: no-repeat;
-}
 /* --------section-------- */
 
 #section_1 {
