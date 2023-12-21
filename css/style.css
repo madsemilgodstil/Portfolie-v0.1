@@ -3,11 +3,11 @@
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 0;
+  scroll-behavior: smooth;
+  scroll-snap-type: y;
 }
 
 html {
-  scroll-behavior: smooth;
-
   /* colors  */
   --c01: #f72585;
   --c02: #7209b7;
