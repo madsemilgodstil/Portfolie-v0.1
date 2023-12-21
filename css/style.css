@@ -6,30 +6,46 @@
 }
 
 html {
+  scroll-behavior: smooth;
+
   /* colors  */
   --c01: #f72585;
   --c02: #7209b7;
   --c03: #3a0ca3;
   --c04: #4361ee;
   --c05: #4cc9f0;
+  --c06: #fcfcfc;
+}
 
-  /* fonts  */
-  --h1: ;
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+header #nav_sprite {
+  background-image: url(/assets/asset_1.svg);
+  aspect-ratio: 1926/841;
+  object-fit: cover;
+  margin-bottom: -50%;
+  position: sticky;
+  z-index: -2;
 }
 
 nav {
+  position: sticky;
   display: flex;
   justify-content: space-between;
-  position: sticky;
   top: 0;
-  background-image: url(/assets/asset_1.svg);
-  aspect-ratio: 1925/841;
-  margin-bottom: -40%;
-  z-index: 1;
 }
 
 nav a {
-  padding: 5%;
+  margin: 3%;
+  margin-top: 5%;
+  margin-bottom: -1%;
+  border: 0;
+  padding: 0;
   text-decoration: none;
   list-style: none;
   font-size: 1rem;
@@ -38,20 +54,19 @@ nav a {
 }
 
 nav a:hover {
-  transform: scale(1.1);
-  text-shadow: 1px 1px 20px var(--c01);
-  margin: 0;
-  padding: auto;
+  font-size: 1.5rem;
 }
 
 #section_1 {
   width: 100%;
   height: 1000px;
-  animation-duration: 6s;
+  background-color: var(--c04);
+  /* animation-duration: 6s;
   animation-name: rainbow;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
-  z-index: 2;
+  animation-direction: alternate; */
+  position: relative;
+  z-index: -99;
 }
 
 #section_1 h1 {
@@ -68,14 +83,14 @@ nav a:hover {
   }
 
   0% {
-    background-color: var(--c01);
+    background-color: var(--c06);
   }
   75% {
-    background-color: var(--c03);
+    background-color: var(--c01);
   }
 
   100% {
-    background-color: var(--c04);
+    background-color: var(--c06);
   }
 
   to {
@@ -88,52 +103,53 @@ nav a:hover {
 #section_2 {
   width: 100%;
   height: 1000px;
-  animation-duration: 8s;
+  background-color: var(--c06);
+  /* animation-duration: 8s;
   animation-name: rainbow;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
+  animation-direction: alternate; */
+  position: static;
   z-index: 5;
-}
-
-#iframe_game {
-  width: 100%;
-  height: auto;
 }
 
 #section_3 {
   width: 100%;
   height: 1000px;
-  animation-duration: 10s;
+  background-color: var(--c06);
+  /* animation-duration: 10s;
   animation-name: rainbow;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
+  animation-direction: alternate; */
 }
 
 #section_4 {
   width: 100%;
   height: 1000px;
-  animation-duration: 12s;
+  background-color: var(--c06);
+  /* animation-duration: 12s;
   animation-name: rainbow;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
+  animation-direction: alternate; */
 }
 
 #section_5 {
   width: 100%;
   height: 1000px;
-  animation-duration: 12s;
+  background-color: var(--c06);
+  /* animation-duration: 12s;
   animation-name: rainbow;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
+  animation-direction: alternate; */
 }
 
 #section_6 {
   width: 100%;
   height: 1000px;
-  animation-duration: 12s;
+  background-color: var(--c06);
+  /* animation-duration: 12s;
   animation-name: rainbow;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
+  animation-direction: alternate; */
 }
 
 #section_footer {
