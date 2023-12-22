@@ -16,38 +16,38 @@ html {
   --c04: #4361ee;
   --c05: #4cc9f0;
   --c06: #fcfcfc;
+}
 
-  /* font */
-  h1 {
-    font-family: font1;
-    font-size: 5rem;
-    padding-top: 150px;
-    padding-left: 20px;
-    color: var(--c01);
-  }
+/* font */
+h1 {
+  font-family: font1;
+  font-size: 5rem;
+  padding-top: 150px;
+  padding-left: 20px;
+  color: var(--c01);
+}
 
-  #info_h1 {
-    padding-top: 10%;
-    font-family: font1;
-    font-size: 20rem;
-    text-align: center;
-    color: var(--c01);
-  }
+#info_h1 {
+  padding-top: 10%;
+  font-family: font1;
+  font-size: 20rem;
+  text-align: center;
+  color: var(--c01);
+}
 
-  p {
-    font-family: font1;
-    font-size: 2rem;
-    color: var(--c03);
-    padding: 5%;
-    margin-top: 0px;
-  }
+p {
+  font-family: font16;
+  font-size: 1rem;
+  color: var(--c03);
+  padding: 5%;
+  margin-top: 0px;
+}
 
-  #p_header {
-    font-family: font10;
-    font-size: 3rem;
-    text-align: center;
-    color: var(--c05);
-  }
+#p_header {
+  font-family: font10;
+  font-size: 3rem;
+  text-align: center;
+  color: var(--c05);
 }
 
 section {
@@ -58,80 +58,85 @@ section {
 
 @font-face {
   font-family: font1;
-  src: url(https://mheitmann.dk/font/grinched_2.0_demo-webfont.woff);
-  src: url(https://mheitmann.dk/font/grinched_2.0_demo-webfont.woff2);
+  src: url(/font/grinched_2.0_demo-webfont.woff);
+  src: url(/font/grinched_2.0_demo-webfont.woff2);
 }
 
 @font-face {
   font-family: font2;
-  src: url(https://mheitmann.dk/font/ActionComics.woff);
-  src: url(https://mheitmann.dk/font/ActionComics.woff2);
+  src: url(/font/ActionComics.woff);
+  src: url(/font/ActionComics.woff2);
 }
 
 @font-face {
   font-family: font3;
-  src: url(https://mheitmann.dk/font/ActionComicsBlack.woff);
-  src: url(https://mheitmann.dk/font/ActionComicsBlack.woff2);
+  src: url(/font/ActionComicsBlack.woff);
+  src: url(/font/ActionComicsBlack.woff2);
 }
 @font-face {
   font-family: font4;
-  src: url(https://mheitmann.dk/font/BadaBoomBB.woff);
-  src: url(https://mheitmann.dk/font/BadaBoomBB.woff2);
+  src: url(/font/BadaBoomBB.woff);
+  src: url(/font/BadaBoomBB.woff2);
 }
 @font-face {
   font-family: font5;
-  src: url(https://mheitmann.dk/font/Bouncy-BlackPERSONALUSEONLY.woff);
-  src: url(https://mheitmann.dk/font/Bouncy-BlackPERSONALUSEONLY.woff2);
+  src: url(/font/Bouncy-BlackPERSONALUSEONLY.woff);
+  src: url(/font/Bouncy-BlackPERSONALUSEONLY.woff2);
 }
 @font-face {
   font-family: font6;
-  src: url(https://mheitmann.dk/font/Bouncy-PERSONALUSEONLY.woff);
-  src: url(https://mheitmann.dk/font/Bouncy-PERSONALUSEONLY.woff2);
+  src: url(/font/Bouncy-PERSONALUSEONLY.woff);
+  src: url(/font/Bouncy-PERSONALUSEONLY.woff2);
 }
 @font-face {
   font-family: font7;
-  src: url(https://mheitmann.dk/font/Bouncy-ThinPERSONALUSEONLY.woff);
-  src: url(https://mheitmann.dk/font/Bouncy-ThinPERSONALUSEONLY.woff2);
+  src: url(/font/Bouncy-ThinPERSONALUSEONLY.woff);
+  src: url(/font/Bouncy-ThinPERSONALUSEONLY.woff2);
 }
 @font-face {
   font-family: font8;
-  src: url(https://mheitmann.dk/font/KaBlam.woff);
-  src: url(https://mheitmann.dk/font/KaBlam.woff2);
+  src: url(/font/KaBlam.woff);
+  src: url(/font/KaBlam.woff2);
 }
 @font-face {
   font-family: font9;
-  src: url(https://mheitmann.dk/font/KaBlamUnder.woff);
-  src: url(https://mheitmann.dk/font/KaBlamUnder.woff2);
+  src: url(/font/KaBlamUnder.woff);
+  src: url(/font/KaBlamUnder.woff2);
 }
 @font-face {
   font-family: font10;
-  src: url(https://mheitmann.dk/font/Potato_sans-Bold.woff);
-  src: url(https://mheitmann.dk/font/Potato_sans-Bold.woff2);
+  src: url(/font/Potato_sans-Bold.woff);
+  src: url(/font/Potato_sans-Bold.woff2);
 }
 @font-face {
   font-family: font11;
-  src: url(https://mheitmann.dk/font/RaisinUp-Regular.woff);
-  src: url(https://mheitmann.dk/font/RaisinUp-Regular.woff2);
+  src: url(/font/RaisinUp-Regular.woff);
+  src: url(/font/RaisinUp-Regular.woff2);
 }
 @font-face {
   font-family: font12;
-  src: url(https://mheitmann.dk/font/ShakaPow.woff);
-  src: url(https://mheitmann.dk/font/ShakaPow.woff2);
+  src: url(/font/ShakaPow.woff);
+  src: url(/font/ShakaPow.woff2);
 }
 @font-face {
   font-family: font13;
-  src: url(https://mheitmann.dk/font/ShakaPowHollow.woff);
-  src: url(https://mheitmann.dk/font/ShakaPowHollow.woff2);
+  src: url(font/ShakaPowHollow.woff);
+  src: url(/font/ShakaPowHollow.woff2);
 }
 @font-face {
   font-family: font14;
-  src: url(https://mheitmann.dk/font/ShakaPowUpright.woff);
-  src: url(https://mheitmann.dk/font/ShakaPowUpright.woff2);
+  src: url(/font/ShakaPowUpright.woff);
+  src: url(/font/ShakaPowUpright.woff2);
 }
 @font-face {
   font-family: font15;
-  src: url(https://mheitmann.dk/font/ShakaPowUprightHollow.woff);
-  src: url(https://mheitmann.dk/font/ShakaPowUprightHollow.woff2);
+  src: url(/font/ShakaPowUprightHollow.woff);
+  src: url(/font/ShakaPowUprightHollow.woff2);
+}
+@font-face {
+  font-family: font16;
+  src: url(/font/childrensans-webfont.woff);
+  src: url(/font/childrensans-webfont.woff2);
 }
 
 /* -------navigation------ */
@@ -393,7 +398,7 @@ nav a:hover {
   background-image: url(https://mheitmann.dk/assets/asset_2.svg);
   aspect-ratio: 1923/712;
   transform: rotate(180deg);
-  background-repeat: no-repeat;
+
   object-fit: cover;
   bottom: 0;
 }
