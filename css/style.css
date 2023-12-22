@@ -427,11 +427,9 @@ nav a:hover {
 /* -----Footer---------  */
 
 #footer_sprite {
-  width: 100%;
   background-image: url(https://mheitmann.dk/assets/asset_2.svg);
-  aspect-ratio: 1923/712;
+  aspect-ratio: 1923/711;
   transform: rotate(180deg);
-
   object-fit: cover;
   bottom: 0;
 }
