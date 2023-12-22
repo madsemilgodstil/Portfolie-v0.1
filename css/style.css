@@ -33,14 +33,15 @@ html {
     color: var(--c01);
   }
 
-  #h5_tema_2 {
-    font-family: font5;
-    font-size: 1.2rem;
-    color: var(--c01);
-    transform: translateY(-1500%) translateX(-10%);
+  p {
+    font-family: font1;
+    font-size: 2rem;
+    color: var(--c03);
+    padding: 5%;
+    margin-top: 0px;
   }
 
-  p {
+  #p_header {
     font-family: font10;
     font-size: 3rem;
     text-align: center;
@@ -256,12 +257,19 @@ nav a:hover {
   border-radius: 40px;
 }
 
-#klat_k1 {
-  width: 20%;
-  transform: translateX(-60%) translateY(-10%);
+#h5_tema_2 {
+  font-family: font5;
+  font-size: 1rem;
+  color: var(--c01);
+  transform: translateY(-1300%) translateX(-12%);
 }
 
-/* ------------tema 2----------  */
+#klat_k1 {
+  width: 15%;
+  transform: translateX(-90%) translateY(-5%);
+}
+
+/* ------------tema 3----------  */
 #section_3 {
   width: 100%;
   height: 100vh;
@@ -270,9 +278,31 @@ nav a:hover {
   animation-name: rainbow;
   animation-iteration-count: infinite;
   animation-direction: alternate; */
+  position: static;
+  z-index: 5;
 }
 
-/* -------tema 3-----------  */
+#tema_3 {
+  width: 100%;
+  height: 500px;
+  padding: 1%;
+  border-radius: 40px;
+  background-color: white;
+}
+
+#h5_tema_3 {
+  font-family: font5;
+  font-size: 1rem;
+  color: var(--c01);
+  transform: translateY(-900%) translateX(96%);
+}
+
+#klat_k2 {
+  width: 15%;
+  transform: translateX(630%) translateY(-10%);
+}
+
+/* -------tema 4-----------  */
 #section_4 {
   width: 100%;
   height: 100vh;
@@ -281,9 +311,31 @@ nav a:hover {
   animation-name: rainbow;
   animation-iteration-count: infinite;
   animation-direction: alternate; */
+  position: static;
+  z-index: 5;
 }
 
-/* --------tema 4-----------  */
+#tema_4 {
+  width: 100%;
+  height: 500px;
+  padding: 1%;
+  border-radius: 40px;
+  background-color: white;
+}
+
+#h5_tema_4 {
+  font-family: font5;
+  font-size: 1rem;
+  color: var(--c01);
+  transform: translateY(-1700%) translateX(-7%);
+}
+
+#klat_k3 {
+  width: 15%;
+  transform: translateX(-60%) translateY(-20%);
+}
+
+/* --------tema 5-----------  */
 #section_5 {
   width: 100%;
   height: 100vh;
@@ -292,6 +344,28 @@ nav a:hover {
   animation-name: rainbow;
   animation-iteration-count: infinite;
   animation-direction: alternate; */
+  position: static;
+  z-index: 5;
+}
+
+#tema_5 {
+  width: 100%;
+  height: 500px;
+  padding: 1%;
+  border-radius: 40px;
+  background-color: white;
+}
+
+#h5_tema_5 {
+  font-family: font5;
+  font-size: 1rem;
+  color: var(--c01);
+  transform: translateY(-1450%) translateX(96%);
+}
+
+#klat_k4 {
+  width: 15%;
+  transform: translateX(630%) translateY(-25%);
 }
 
 .new_color {
@@ -307,6 +381,8 @@ nav a:hover {
   animation-name: rainbow;
   animation-iteration-count: infinite;
   animation-direction: alternate; */
+  position: static;
+  z-index: 5;
 }
 
 /* -----Footer---------  */
