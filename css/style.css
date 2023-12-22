@@ -33,6 +33,13 @@ html {
     color: var(--c01);
   }
 
+  #h5_tema_2 {
+    font-family: font5;
+    font-size: 1.2rem;
+    color: var(--c01);
+    transform: translateY(-1500%) translateX(-10%);
+  }
+
   p {
     font-family: font10;
     font-size: 3rem;
@@ -228,7 +235,7 @@ nav a:hover {
   z-index: 99;
 }
 
-/* spil  */
+/* ------------tema 2 ---------- */
 
 #section_2 {
   width: 100%;
@@ -242,6 +249,19 @@ nav a:hover {
   z-index: 5;
 }
 
+#tema_2 {
+  width: 100%;
+  height: 500px;
+  padding: 1%;
+  border-radius: 40px;
+}
+
+#klat_k1 {
+  width: 20%;
+  transform: translateX(-60%) translateY(-10%);
+}
+
+/* ------------tema 2----------  */
 #section_3 {
   width: 100%;
   height: 100vh;
@@ -252,6 +272,7 @@ nav a:hover {
   animation-direction: alternate; */
 }
 
+/* -------tema 3-----------  */
 #section_4 {
   width: 100%;
   height: 100vh;
@@ -262,6 +283,7 @@ nav a:hover {
   animation-direction: alternate; */
 }
 
+/* --------tema 4-----------  */
 #section_5 {
   width: 100%;
   height: 100vh;
@@ -276,6 +298,7 @@ nav a:hover {
   color: #4361ee;
 }
 
+/* ------cv----------  */
 #section_6 {
   width: 100%;
   height: 100vh;
