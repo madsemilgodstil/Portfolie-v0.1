@@ -4,7 +4,7 @@
   margin-right: 0;
   margin-bottom: 0;
   scroll-behavior: smooth;
-  width: 100%;
+  max-width: 100vw;
 }
 
 html {
