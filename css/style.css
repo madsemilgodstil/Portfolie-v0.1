@@ -57,80 +57,80 @@ section {
 
 @font-face {
   font-family: font1;
-  src: url(/font/grinched_2.0_demo-webfont.woff);
-  src: url(/font/grinched_2.0_demo-webfont.woff2);
+  src: url(https://mheitmann.dk/font/grinched_2.0_demo-webfont.woff);
+  src: url(https://mheitmann.dk/font/grinched_2.0_demo-webfont.woff2);
 }
 
 @font-face {
   font-family: font2;
-  src: url(/font/ActionComics.woff);
-  src: url(/font/ActionComics.woff2);
+  src: url(https://mheitmann.dk/font/ActionComics.woff);
+  src: url(https://mheitmann.dk/font/ActionComics.woff2);
 }
 
 @font-face {
   font-family: font3;
-  src: url(/font/ActionComicsBlack.woff);
-  src: url(/font/ActionComicsBlack.woff2);
+  src: url(https://mheitmann.dk/font/ActionComicsBlack.woff);
+  src: url(https://mheitmann.dk/font/ActionComicsBlack.woff2);
 }
 @font-face {
   font-family: font4;
-  src: url(/font/BadaBoomBB.woff);
-  src: url(/font/BadaBoomBB.woff2);
+  src: url(https://mheitmann.dk/font/BadaBoomBB.woff);
+  src: url(https://mheitmann.dk/font/BadaBoomBB.woff2);
 }
 @font-face {
   font-family: font5;
-  src: url(/font/Bouncy-BlackPERSONALUSEONLY.woff);
-  src: url(/font/Bouncy-BlackPERSONALUSEONLY.woff2);
+  src: url(https://mheitmann.dk/font/Bouncy-BlackPERSONALUSEONLY.woff);
+  src: url(https://mheitmann.dk/font/Bouncy-BlackPERSONALUSEONLY.woff2);
 }
 @font-face {
   font-family: font6;
-  src: url(/font/Bouncy-PERSONALUSEONLY.woff);
-  src: url(/font/Bouncy-PERSONALUSEONLY.woff2);
+  src: url(https://mheitmann.dk/font/Bouncy-PERSONALUSEONLY.woff);
+  src: url(https://mheitmann.dk/font/Bouncy-PERSONALUSEONLY.woff2);
 }
 @font-face {
   font-family: font7;
-  src: url(/font/Bouncy-ThinPERSONALUSEONLY.woff);
-  src: url(/font/Bouncy-ThinPERSONALUSEONLY.woff2);
+  src: url(https://mheitmann.dk/font/Bouncy-ThinPERSONALUSEONLY.woff);
+  src: url(https://mheitmann.dk/font/Bouncy-ThinPERSONALUSEONLY.woff2);
 }
 @font-face {
   font-family: font8;
-  src: url(/font/KaBlam.woff);
-  src: url(/font/KaBlam.woff2);
+  src: url(https://mheitmann.dk/font/KaBlam.woff);
+  src: url(https://mheitmann.dk/font/KaBlam.woff2);
 }
 @font-face {
   font-family: font9;
-  src: url(/font/KaBlamUnder.woff);
-  src: url(/font/KaBlamUnder.woff2);
+  src: url(https://mheitmann.dk/font/KaBlamUnder.woff);
+  src: url(https://mheitmann.dk/font/KaBlamUnder.woff2);
 }
 @font-face {
   font-family: font10;
-  src: url(/font/Potato_sans-Bold.woff);
-  src: url(/font/Potato_sans-Bold.woff2);
+  src: url(https://mheitmann.dk/font/Potato_sans-Bold.woff);
+  src: url(https://mheitmann.dk/font/Potato_sans-Bold.woff2);
 }
 @font-face {
   font-family: font11;
-  src: url(/font/RaisinUp-Regular.woff);
-  src: url(/font/RaisinUp-Regular.woff2);
+  src: url(https://mheitmann.dk/font/RaisinUp-Regular.woff);
+  src: url(https://mheitmann.dk/font/RaisinUp-Regular.woff2);
 }
 @font-face {
   font-family: font12;
-  src: url(/font/ShakaPow.woff);
-  src: url(/font/ShakaPow.woff2);
+  src: url(https://mheitmann.dk/font/ShakaPow.woff);
+  src: url(https://mheitmann.dk/font/ShakaPow.woff2);
 }
 @font-face {
   font-family: font13;
-  src: url(/font/ShakaPowHollow.woff);
-  src: url(/font/ShakaPowHollow.woff2);
+  src: url(https://mheitmann.dk/font/ShakaPowHollow.woff);
+  src: url(https://mheitmann.dk/font/ShakaPowHollow.woff2);
 }
 @font-face {
   font-family: font14;
-  src: url(/font/ShakaPowUpright.woff);
-  src: url(/font/ShakaPowUpright.woff2);
+  src: url(https://mheitmann.dk/font/ShakaPowUpright.woff);
+  src: url(https://mheitmann.dk/font/ShakaPowUpright.woff2);
 }
 @font-face {
   font-family: font15;
-  src: url(/font/ShakaPowUprightHollow.woff);
-  src: url(/font/ShakaPowUprightHollow.woff2);
+  src: url(https://mheitmann.dk/font/ShakaPowUprightHollow.woff);
+  src: url(https://mheitmann.dk/font/ShakaPowUprightHollow.woff2);
 }
 
 /* -------navigation------ */
@@ -143,7 +143,7 @@ header {
 }
 
 header #nav_sprite {
-  background-image: url(/assets/asset_1.svg);
+  background-image: url(https://mheitmann.dk/assets/asset_1.svg);
   aspect-ratio: 1926/841;
   object-fit: cover;
   margin-bottom: -50%;
@@ -194,27 +194,27 @@ nav a:hover {
 }
 
 .link1:hover {
-  background-image: url(/assets/k1.svg);
+  background-image: url(https://mheitmann.dk/assets/k1.svg);
 }
 
 .link2:hover {
-  background-image: url(/assets/k2.svg);
+  background-image: url(https://mheitmann.dk/assets/k2.svg);
 }
 
 .link3:hover {
-  background-image: url(/assets/k3.svg);
+  background-image: url(https://mheitmann.dk/assets/k3.svg);
 }
 
 .link4:hover {
-  background-image: url(/assets/k4.svg);
+  background-image: url(https://mheitmann.dk/assets/k4.svg);
 }
 
 .link5:hover {
-  background-image: url(/assets/k5.svg);
+  background-image: url(https://mheitmann.dk/assets/k5.svg);
 }
 
 .link6:hover {
-  background-image: url(/assets/k3.svg);
+  background-image: url(https://mheitmann.dk/assets/k3.svg);
 }
 
 /* --------section-------- */
@@ -389,7 +389,7 @@ nav a:hover {
 
 #footer_sprite {
   width: 100%;
-  background-image: url(/assets/asset_2.svg);
+  background-image: url(https://mheitmann.dk/assets/asset_2.svg);
   aspect-ratio: 1923/712;
   transform: rotate(180deg);
   background-repeat: no-repeat;
