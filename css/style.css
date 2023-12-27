@@ -37,8 +37,8 @@ h1 {
 }
 
 p {
-  font-family: font16;
-  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
   color: var(--c03);
 }
 
@@ -259,7 +259,7 @@ nav a:hover {
   margin-left: 20%;
   margin-right: 20%;
   margin-top: -25%;
-  line-height: 50px;
+  line-height: 30px;
 }
 
 #tema_2 {
@@ -295,10 +295,10 @@ nav a:hover {
 }
 
 #section_3 p {
-  margin-left: 20%;
+  margin-left: 5%;
   margin-right: 20%;
-  margin-top: -20%;
-  line-height: 50px;
+  margin-top: -15%;
+  line-height: 20px;
 }
 
 #tema_3 {
@@ -306,7 +306,7 @@ nav a:hover {
   height: 500px;
   padding: 1%;
   border-radius: 40px;
-  background-color: white;
+  background-color: var(--c06);
 }
 
 #h5_tema_3 {
@@ -337,8 +337,8 @@ nav a:hover {
 #section_4 p {
   margin-left: 20%;
   margin-right: 20%;
-  margin-top: -25%;
-  line-height: 50px;
+  margin-top: -15%;
+  line-height: 20px;
 }
 
 #tema_4 {
@@ -346,7 +346,7 @@ nav a:hover {
   height: 500px;
   padding: 1%;
   border-radius: 40px;
-  background-color: white;
+  background-color: var(--c06);
 }
 
 #h5_tema_4 {
@@ -375,10 +375,10 @@ nav a:hover {
 }
 
 #section_5 p {
-  margin-left: 20%;
+  margin-left: 5%;
   margin-right: 20%;
-  margin-top: -25%;
-  line-height: 50px;
+  margin-top: -15%;
+  line-height: 20px;
 }
 
 #tema_5 {
@@ -386,7 +386,7 @@ nav a:hover {
   height: 500px;
   padding: 1%;
   border-radius: 40px;
-  background-color: white;
+  background-color: var(--c03);
 }
 
 #h5_tema_5 {
@@ -422,7 +422,7 @@ nav a:hover {
   margin-left: 20%;
   margin-right: 20%;
   margin-top: -25%;
-  line-height: 50px;
+  line-height: 20px;
 }
 
 /* -----Footer---------  */
@@ -432,6 +432,7 @@ nav a:hover {
   aspect-ratio: 1923/711;
   transform: rotate(180deg);
   object-fit: cover;
+  position: sticky;
   bottom: 0;
 }
 
@@ -445,11 +446,51 @@ nav a:hover {
   border-radius: 50px;
   opacity: 1;
   z-index: 99;
-  margin-bottom: -80%;
 }
 
 #mads1:hover {
   transform: scale(1.1);
+}
+
+#grid_footer_child_2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  justify-content: space-between;
+  z-index: 99;
+  background-color: var(--c06);
+  border-radius: 30px;
+}
+
+#p_footer {
+  padding-top: 5%;
+  font-family: font10;
+  font-size: 2rem;
+  text-align: center;
+  color: var(--c05);
+}
+
+#phone {
+  text-decoration: none;
+  font-family: font5;
+  font-size: 1rem;
+  color: var(--c01);
+  cursor: pointer;
+}
+
+#mail {
+  text-decoration: none;
+  font-family: font5;
+  font-size: 1rem;
+  color: var(--c01);
+  cursor: pointer;
+}
+
+#map {
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
 }
 
 #button {
