@@ -488,12 +488,20 @@ section {
     cursor: pointer;
   }
 
+  #phone:hover {
+    color: var(--c04);
+  }
+
   #mail {
     text-decoration: none;
     font-family: font5;
     font-size: 1rem;
     color: var(--c01);
     cursor: pointer;
+  }
+
+  #mail:hover {
+    color: var(--c04);
   }
 
   #map {
