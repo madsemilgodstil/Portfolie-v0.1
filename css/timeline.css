@@ -134,7 +134,7 @@ h3 {
 }
 
 .timeline-slider--inner {
-  -webkit-user-select: none;
+  /* -webkit-user-select: none; */
   -webkit-overflow-scrolling: touch;
   cursor: -webkit-grab;
 }
