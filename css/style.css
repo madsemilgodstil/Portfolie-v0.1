@@ -421,6 +421,14 @@ section {
     font-weight: bold;
   }
 
+  #cv {
+    width: 100%;
+    height: 500px;
+    padding: 1%;
+    border-radius: 40px;
+    background-color: var(--c06);
+  }
+
   /* -----Footer---------  */
 
   #footer_sprite {

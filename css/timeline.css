@@ -1,0 +1,240 @@
+/* Variables */
+:root {
+  --base-spacing: 30px;
+  --c01: #f72585;
+  --c02: #7209b7;
+  --c03: #3a0ca3;
+  --c04: #4361ee;
+  --c05: #4cc9f0;
+  --c06: #fcfcfc;
+  --white: #fff;
+  --lighter-gray: #dbdbdb;
+  --light-gray: #9d9c99;
+  --medium-gray: #3b3934;
+  --dark-gray: #292827;
+  --bg-gray: #f3f3f3;
+  --black: #000;
+  --timing: 300ms;
+  --easeInOutCubic: cubic-bezier(0.65, 0.05, 0.14, 1);
+  --easeInOutCubicBounce: cubic-bezier(0.65, 0.05, 0.14, 1.18);
+  --margin-sm: calc(var(--base-spacing) * 1em);
+  --margin-md: calc(60px / 16);
+  --margin-lg: calc(75px / 16);
+  --margin-xl: calc(100px / 16);
+}
+
+p {
+  color: var(--c03);
+}
+
+h3 {
+  color: var(--c01);
+}
+
+/* General Styles */
+.timeline {
+  position: relative;
+  padding-top: var(--margin-sm);
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  background-color: var(--c06);
+  height: 100%;
+  left: 0;
+  right: 0;
+  z-index: -2;
+}
+
+.timeline li {
+  display: inline-block;
+}
+
+.timeline button {
+  border: 0;
+  user-select: none;
+  font-size: 1.75em;
+  margin: 0 var(--base-spacing);
+  line-height: 1;
+  padding: 0 5px;
+  background-color: var(--c06);
+  z-index: 1;
+  transition: transform var(--timing) / 2 var(--easeInOutCubic);
+
+  &:hover,
+  &:focus,
+  &.active {
+    transform: scale(1.2);
+  }
+
+  &.active::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: var(--c01);
+    bottom: -2px;
+    left: 5px;
+    right: 5px;
+  }
+}
+
+.timeline article {
+  display: inline-block;
+  width: 100%;
+  opacity: 0;
+  transition: opacity var(--timing) ease, transform var(--timing) * 2 ease;
+  white-space: normal;
+  vertical-align: top;
+  will-change: opacity, transform;
+  transform: scale(0.9);
+}
+
+.timeline article.active {
+  opacity: 1;
+  transform: none;
+}
+
+.timeline--article-output {
+  position: relative;
+  overflow: hidden;
+}
+
+.timeline--img {
+  width: 100%;
+}
+
+.timeline img {
+  min-width: 100%;
+  max-width: 100%;
+  margin-bottom: calc(var(--base-spacing) / 2);
+}
+
+.timeline--content {
+  max-width: 500px;
+}
+
+.timeline-slider--wrapper {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: var(--margin-sm);
+}
+
+.timeline-slider--wrapper::after {
+  content: "";
+  position: absolute;
+  background-color: var(--black);
+  height: 1px;
+  left: 0;
+  right: 0;
+  top: var(--base-spacing);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.timeline-slider--inner {
+  -webkit-user-select: none;
+  -webkit-overflow-scrolling: touch;
+  cursor: -webkit-grab;
+}
+
+.timeline-slider--inner.dragging {
+  cursor: -webkit-grabbing;
+}
+
+.timeline-slider {
+  display: inline-block;
+  white-space: nowrap;
+  padding: var(--base-spacing) / 2 0;
+  will-change: transform;
+}
+
+.timeline-slider--grad-l,
+.timeline-slider--grad-r {
+  position: absolute;
+  height: 100%;
+  width: var(--base-spacing) * 2;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.timeline-slider--grad-l {
+  left: 0;
+  background-image: linear-gradient(to left, transparent, var(--white));
+  background-image: -webkit-linear-gradient(
+    right,
+    rgba(255, 255, 255, 0),
+    var(--white)
+  );
+}
+
+.timeline-slider--grad-r {
+  right: 0;
+  background-image: linear-gradient(to right, transparent, var(--white));
+  background-image: -webkit-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0),
+    var(--white)
+  );
+}
+
+.article--outer {
+  white-space: nowrap;
+  transition: all var(--timing) * 2 var(--easeInOutCubic);
+  will-change: transform;
+}
+
+.article--inner {
+  white-space: normal;
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+  .timeline {
+    padding-top: var(--margin-md);
+  }
+
+  .timeline::after {
+    height: 80%;
+  }
+
+  .timeline--img {
+    padding-right: var(--base-spacing);
+    width: inherit;
+  }
+
+  .timeline button {
+    margin: 0 var(--base-spacing) * 2;
+  }
+
+  .timeline-slider--wrapper {
+    margin-bottom: var(--margin-md);
+  }
+
+  .article--inner {
+    display: flex;
+  }
+
+  .no-flexbox .timeline-slider--img,
+  .no-flexbox .timeline-slider--content {
+    width: 50%;
+    float: left;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .timeline {
+    padding-top: var(--margin-lg);
+  }
+
+  .timeline--img {
+    width: initial;
+  }
+
+  .timeline-slider--wrapper {
+    margin-bottom: var(--margin-lg);
+  }
+}

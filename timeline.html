@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/timeline.css">
+    <title>Timeline</title>
+</head>
+
+<body>
+
+    <script>
+        window.timelineData = [
+            {
+                year: 1992,
+                img: 'http://www.fillmurray.com/570/430',
+                heading: 'Født 1992',
+                text: '<p></p>'
+            },
+            {
+                year: 2008,
+                img: 'http://www.fillmurray.com/570/430',
+                heading: '9. klasse 2008',
+                text: '<p></p>'
+            },
+            {
+                year: 2016,
+                img: 'http://www.fillmurray.com/570/430',
+                heading: 'Elektriker 2016',
+                text: '<p></p>'
+            },
+            {
+                year: 2020,
+                img: 'http://www.fillmurray.com/570/430',
+                heading: 'El installatør 2020',
+                text: '<p></p>'
+            },
+            {
+                year: 2023,
+                img: 'http://www.fillmurray.com/570/430',
+                heading: 'Multimediadesigner 2023',
+                text: '<p></p>'
+            }
+        ]
+    </script>
+
+    <script id="timeline-template" type="x-template">
+
+    <div class="article--inner">
+
+        <div class="timeline--img">
+            <img alt="">
+        </div>
+
+        <div class="timeline--content">
+            <h3 id="timeline--heading"></h3>
+            <div id="timeline--text">
+            </div>
+        </div>
+
+    </div>
+</script>
+
+    <section class="section timeline">
+
+        <div class="container">
+
+            <div class="timeline-slider--wrapper">
+
+                <div class="timeline-slider--grad-l"></div>
+
+                <div class="timeline-slider--inner" id="timeline-slider-output"></div>
+
+                <div class="timeline-slider--grad-r"></div>
+
+            </div>
+
+            <div id="article-output" class="timeline--article-output"></div>
+
+        </div>
+
+    </section>
+    <script src="./js/timeline.js"></script>
+</body>
+
+</html>
