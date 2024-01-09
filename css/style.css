@@ -58,25 +58,25 @@ section {
 
 @font-face {
   font-family: font1;
-  src: url(/font/grinched_2.0_demo-webfont.woff);
-  src: url(/font/grinched_2.0_demo-webfont.woff2);
+  src: url(https://mheitmann.dk/font/grinched_2.0_demo-webfont.woff);
+  src: url(https://mheitmann.dk/font/grinched_2.0_demo-webfont.woff2);
 }
 
 @font-face {
   font-family: font2;
-  src: url(/font/ActionComics.woff);
-  src: url(/font/ActionComics.woff2);
+  src: url(https://mheitmann.dk/font/ActionComics.woff);
+  src: url(https://mheitmann.dk/font/ActionComics.woff2);
 }
 
 @font-face {
   font-family: font3;
-  src: url(/font/ActionComicsBlack.woff);
-  src: url(/font/ActionComicsBlack.woff2);
+  src: url(https://mheitmann.dk/font/ActionComicsBlack.woff);
+  src: url(https://mheitmann.dk/font/ActionComicsBlack.woff2);
 }
 @font-face {
   font-family: font4;
-  src: url(/font/BadaBoomBB.woff);
-  src: url(/font/BadaBoomBB.woff2);
+  src: url(https://mheitmann.dk/font/BadaBoomBB.woff);
+  src: url(https://mheitmann.dk/font/BadaBoomBB.woff2);
 }
 @font-face {
   font-family: font5;
@@ -488,7 +488,7 @@ section {
   video {
     margin-top: 10%;
     position: relative;
-    width: 100%;
+    width: 50%;
     z-index: 99;
   }
 
