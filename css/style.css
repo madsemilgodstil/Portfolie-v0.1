@@ -20,6 +20,10 @@ html {
   --c06: #fcfcfc;
 }
 
+iframe {
+  border: none;
+}
+
 /* font */
 h1 {
   font-family: font1;
@@ -451,6 +455,17 @@ section {
     background-color: var(--c06);
   }
 
+  #klat_k6 {
+    width: 15%;
+    transform: translateX(-60%) translateY(-20%);
+  }
+
+  #h5_tema_6 {
+    font-family: font5;
+    font-size: 1rem;
+    color: var(--c01);
+    transform: translateY(-1600%) translateX(-7%);
+  }
   /* -----Footer---------  */
 
   #footer_sprite {
@@ -665,7 +680,7 @@ section {
     font-size: 1rem;
     font-family: font1;
     cursor: pointer;
-    float: left, bottom;
+    float: left;
     margin-left: 1%;
     margin-top: 1%;
     bottom: 100%;

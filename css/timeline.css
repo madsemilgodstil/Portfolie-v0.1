@@ -146,7 +146,7 @@ h3 {
 .timeline-slider {
   display: inline-block;
   white-space: nowrap;
-  padding: var(--base-spacing) / 2 0;
+  padding: var(--base-spacing) 2 0;
   will-change: transform;
 }
 
