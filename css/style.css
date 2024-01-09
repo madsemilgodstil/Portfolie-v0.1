@@ -198,19 +198,19 @@ section {
     text-align: center;
     list-style: none;
     font-size: 1.5rem;
-    font-family: font14;
+    font-family: font15;
     color: var(--c05);
   }
 
   .active-link {
     color: var(--c01);
     font-family: font1;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
 
   nav a:hover {
     font-size: 1.5rem;
-    font-family: font15;
+    font-family: font14;
   }
 
   .link {
@@ -478,7 +478,18 @@ section {
 
   #mads1:hover {
     transform: scale(1.1);
-    overflow: hidden;
+    cursor: pointer;
+  }
+
+  #mediaContainer {
+    position: relative;
+  }
+
+  video {
+    margin-top: 10%;
+    position: relative;
+    width: 100%;
+    z-index: 99;
   }
 
   #grid_footer_child_2 {

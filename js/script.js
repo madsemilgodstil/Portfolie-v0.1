@@ -1,3 +1,4 @@
+// Funktion til at vise eller skjule "Tilbage til toppen" knappen baseret på scroll-position
 var btn = document.getElementById('button')
 
 window.addEventListener('scroll', function () {
@@ -8,6 +9,7 @@ window.addEventListener('scroll', function () {
   }
 })
 
+// Funktion til at scrolle til toppen ved klik på "Tilbage til toppen" knappen
 btn.addEventListener('click', function (e) {
   e.preventDefault()
   document.documentElement.scrollTop = 0
@@ -15,9 +17,10 @@ btn.addEventListener('click', function (e) {
 })
 
 document.addEventListener('DOMContentLoaded', function () {
-  // Select all menu links
+  // Vælg alle menu-links
   var menuLinks = document.querySelectorAll('.nav_menu a')
 
+  // Funktion til at kontrollere om et element er synligt i synsfeltet
   function isElementInViewport (el) {
     var rect = el.getBoundingClientRect()
     return (
@@ -27,19 +30,20 @@ document.addEventListener('DOMContentLoaded', function () {
     )
   }
 
+  // Funktion til at opdatere farven på menu-links baseret på synlig sektion
   function updateMenuLinkColor () {
-    // Select the section associated with "Tema 5"
+    // Vælg sektionen, der er forbundet med "Tema 5"
     var section5 = document.getElementById('section_5')
 
     if (section5 && isElementInViewport(section5)) {
-      // Add a class to all menu links to change color
+      // Tilføj en klasse til alle menu-links for at ændre farve
       menuLinks.forEach(function (link) {
         if (!link.classList.contains('active-link')) {
           link.classList.add('new_color')
         }
       })
     } else {
-      // Remove the class from all menu links if the section is not in the viewport
+      // Fjern klassen fra alle menu-links, hvis sektionen ikke er i synsfeltet
       menuLinks.forEach(function (link) {
         link.classList.remove('new_color')
       })
@@ -49,13 +53,15 @@ document.addEventListener('DOMContentLoaded', function () {
   window.addEventListener('scroll', updateMenuLinkColor)
   window.addEventListener('resize', updateMenuLinkColor)
 
-  // Initial call to set the initial state on page load
+  // Initial kald for at sætte den indledende tilstand ved indlæsning af siden
   updateMenuLinkColor()
 })
 
 document.addEventListener('DOMContentLoaded', function () {
+  // Opret en observer for at håndtere synlighed af sektioner i menuen
   var observer = new IntersectionObserver(handleIntersect, { threshold: 0.2 })
 
+  // Observer alle menu-links og associerede sektioner
   document.querySelectorAll('.link').forEach(function (link) {
     var targetId = link.getAttribute('href').substring(1)
     var target = document.getElementById(targetId)
@@ -65,15 +71,16 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   })
 
+  // Funktion til at håndtere synlighedsændringer i observerede elementer
   function handleIntersect (entries) {
     entries.forEach(function (entry) {
       if (entry.isIntersecting) {
-        // Remove the 'active-link' class from all links
+        // Fjern 'active-link'-klassen fra alle links
         document.querySelectorAll('.link').forEach(function (link) {
           link.classList.remove('active-link')
         })
 
-        // Add the 'active-link' class to the link corresponding to the visible section
+        // Tilføj 'active-link'-klassen til linket, der svarer til den synlige sektion
         var linkId = '#' + entry.target.id
         var activeLink = document.querySelector('a[href="' + linkId + '"]')
         if (activeLink) {
@@ -85,19 +92,22 @@ document.addEventListener('DOMContentLoaded', function () {
 })
 
 document.addEventListener('DOMContentLoaded', function () {
+  // Opret en observer for at håndtere synlighed af h1-elementer
   var observer = new IntersectionObserver(handleIntersect, { threshold: 0.2 })
 
+  // Observer alle h1-elementer med 'h1_animate' klassen
   document.querySelectorAll('.h1_animate').forEach(function (h1Element) {
     observer.observe(h1Element)
   })
 
+  // Funktion til at håndtere synlighedsændringer i observerede elementer
   function handleIntersect (entries) {
     entries.forEach(function (entry) {
       if (entry.isIntersecting) {
-        // Add a class to trigger the CSS animation
+        // Tilføj en klasse for at udløse CSS-animationen
         entry.target.classList.add('animate')
       } else {
-        // Remove the class if the element is not in the viewport
+        // Fjern klassen, hvis elementet ikke er i synsfeltet
         entry.target.classList.remove('animate')
       }
     })
@@ -105,14 +115,14 @@ document.addEventListener('DOMContentLoaded', function () {
 })
 
 document.addEventListener('DOMContentLoaded', function () {
-  // Get the buttons and sections
+  // Hent alle knapper og sektioner
   const buttons = document.querySelectorAll('[id^="nextSectionButton"]')
   const sections = document.querySelectorAll('section')
 
-  // Initialize the current section index
+  // Initialiser det nuværende sektionsindeks
   let currentSectionIndex = 0
 
-  // Function to scroll to the next section
+  // Funktion til at rulle til næste sektion ved klik på knap
   function nextSection () {
     if (currentSectionIndex < sections.length - 1) {
       currentSectionIndex++
@@ -120,8 +130,25 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  // Attach the function to each button click event
+  // Vedhæft funktionen til hver knap-klikbegivenhed
   buttons.forEach((button, index) => {
     button.addEventListener('click', nextSection)
   })
 })
+
+function changeToVideo () {
+  // Get the image element
+  var imageElement = document.getElementById('mads1')
+
+  // Create a video element
+  var videoElement = document.createElement('video')
+  videoElement.src = './assets/videosite_mads.mp4'
+  videoElement.controls = true // Show video controls
+
+  // Set the video dimensions to match the image
+  videoElement.width = imageElement.width
+  videoElement.height = imageElement.height
+
+  // Replace the image with the video
+  imageElement.parentNode.replaceChild(videoElement, imageElement)
+}
