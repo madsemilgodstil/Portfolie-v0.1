@@ -142,7 +142,12 @@ section {
 @media screen and (min-width: 800px) {
   /* -------navigation------ */
 
-  #nextSectionButton {
+  #nextSectionButton1,
+  #nextSectionButton2,
+  #nextSectionButton3,
+  #nextSectionButton4,
+  #nextSectionButton5,
+  #nextSectionButton6 {
     display: none;
     position: relative;
     padding: 10px 15px;
