@@ -982,6 +982,20 @@ section {
     font-weight: bold;
   }
 
+  #klat_k6 {
+    display: none;
+    width: 15%;
+    transform: translateX(-60%) translateY(-20%);
+  }
+
+  #h5_tema_6 {
+    display: none;
+    font-family: font5;
+    font-size: 1rem;
+    color: var(--c01);
+    transform: translateY(-1600%) translateX(-7%);
+  }
+
   /* -----Footer---------  */
 
   #section_footer {
