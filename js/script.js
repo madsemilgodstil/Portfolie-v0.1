@@ -103,3 +103,25 @@ document.addEventListener('DOMContentLoaded', function () {
     })
   }
 })
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Get the buttons and sections
+  const buttons = document.querySelectorAll('[id^="nextSectionButton"]')
+  const sections = document.querySelectorAll('section')
+
+  // Initialize the current section index
+  let currentSectionIndex = 0
+
+  // Function to scroll to the next section
+  function nextSection () {
+    if (currentSectionIndex < sections.length - 1) {
+      currentSectionIndex++
+      sections[currentSectionIndex].scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+
+  // Attach the function to each button click event
+  buttons.forEach((button, index) => {
+    button.addEventListener('click', nextSection)
+  })
+})
