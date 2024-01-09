@@ -58,85 +58,85 @@ section {
 
 @font-face {
   font-family: font1;
-  src: url(/font/grinched_2.0_demo-webfont.woff);
-  src: url(/font/grinched_2.0_demo-webfont.woff2);
+  src: url(/font/grinched_2.0_demo-webfont.woff) format("woff");
+  src: url(/font/grinched_2.0_demo-webfont.woff2) format("woff2");
 }
 
 @font-face {
   font-family: font2;
-  src: url(/font/ActionComics.woff);
-  src: url(/font/ActionComics.woff2);
+  src: url(/font/ActionComics.woff) format("woff");
+  src: url(/font/ActionComics.woff2) format("woff2");
 }
 
 @font-face {
   font-family: font3;
-  src: url(/font/ActionComicsBlack.woff);
-  src: url(/font/ActionComicsBlack.woff2);
+  src: url(/font/ActionComicsBlack.woff) format("woff");
+  src: url(/font/ActionComicsBlack.woff2) format("woff2");
 }
 @font-face {
   font-family: font4;
-  src: url(/font/BadaBoomBB.woff);
-  src: url(/font/BadaBoomBB.woff2);
+  src: url(/font/BadaBoomBB.woff) format("woff");
+  src: url(/font/BadaBoomBB.woff2) format("woff2");
 }
 @font-face {
   font-family: font5;
-  src: url(/font/Bouncy-BlackPERSONALUSEONLY.woff);
-  src: url(/font/Bouncy-BlackPERSONALUSEONLY.woff2);
+  src: url(/font/Bouncy-BlackPERSONALUSEONLY.woff) format("woff");
+  src: url(/font/Bouncy-BlackPERSONALUSEONLY.woff2) format("woff2");
 }
 @font-face {
   font-family: font6;
-  src: url(/font/Bouncy-PERSONALUSEONLY.woff);
-  src: url(/font/Bouncy-PERSONALUSEONLY.woff2);
+  src: url(/font/Bouncy-PERSONALUSEONLY.woff) format("woff");
+  src: url(/font/Bouncy-PERSONALUSEONLY.woff2) format("woff2");
 }
 @font-face {
   font-family: font7;
-  src: url(/font/Bouncy-ThinPERSONALUSEONLY.woff);
-  src: url(/font/Bouncy-ThinPERSONALUSEONLY.woff2);
+  src: url(/font/Bouncy-ThinPERSONALUSEONLY.woff) format("woff");
+  src: url(/font/Bouncy-ThinPERSONALUSEONLY.woff2) format("woff2");
 }
 @font-face {
   font-family: font8;
-  src: url(/font/KaBlam.woff);
-  src: url(/font/KaBlam.woff2);
+  src: url(/font/KaBlam.woff) format("woff");
+  src: url(/font/KaBlam.woff2) format("woff2");
 }
 @font-face {
   font-family: font9;
-  src: url(/font/KaBlamUnder.woff);
-  src: url(/font/KaBlamUnder.woff2);
+  src: url(/font/KaBlamUnder.woff) format("woff");
+  src: url(/font/KaBlamUnder.woff2) format("woff2");
 }
 @font-face {
   font-family: font10;
-  src: url(/font/Potato_sans-Bold.woff);
-  src: url(/font/Potato_sans-Bold.woff2);
+  src: url(/font/Potato_sans-Bold.woff) format("woff");
+  src: url(/font/Potato_sans-Bold.woff2) format("woff2");
 }
 @font-face {
   font-family: font11;
-  src: url(/font/RaisinUp-Regular.woff);
-  src: url(/font/RaisinUp-Regular.woff2);
+  src: url(/font/RaisinUp-Regular.woff) format("woff");
+  src: url(/font/RaisinUp-Regular.woff2) format("woff2");
 }
 @font-face {
   font-family: font12;
-  src: url(/font/ShakaPow.woff);
-  src: url(/font/ShakaPow.woff2);
+  src: url(/font/ShakaPow.woff) format("woff");
+  src: url(/font/ShakaPow.woff2) format("woff2");
 }
 @font-face {
   font-family: font13;
-  src: url(font/ShakaPowHollow.woff);
-  src: url(/font/ShakaPowHollow.woff2);
+  src: url(font/ShakaPowHollow.woff) format("woff");
+  src: url(/font/ShakaPowHollow.woff2) format("woff2");
 }
 @font-face {
   font-family: font14;
-  src: url(/font/ShakaPowUpright.woff);
-  src: url(/font/ShakaPowUpright.woff2);
+  src: url(/font/ShakaPowUpright.woff) format("woff");
+  src: url(/font/ShakaPowUpright.woff2) format("woff2");
 }
 @font-face {
   font-family: font15;
-  src: url(/font/ShakaPowUprightHollow.woff);
-  src: url(/font/ShakaPowUprightHollow.woff2);
+  src: url(/font/ShakaPowUprightHollow.woff) format("woff");
+  src: url(/font/ShakaPowUprightHollow.woff2) format("woff2");
 }
 @font-face {
   font-family: font16;
-  src: url(/font/childrensans-webfont.woff);
-  src: url(/font/childrensans-webfont.woff2);
+  src: url(/font/childrensans-webfont.woff) format("woff");
+  src: url(/font/childrensans-webfont.woff2) format("woff2");
 }
 
 @media screen and (min-width: 800px) {
