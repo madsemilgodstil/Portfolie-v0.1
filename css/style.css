@@ -456,6 +456,7 @@ section {
 
   #mads1:hover {
     transform: scale(1.1);
+    overflow: hidden;
   }
 
   #grid_footer_child_2 {
