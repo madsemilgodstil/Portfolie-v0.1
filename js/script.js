@@ -142,7 +142,7 @@ function changeToVideo () {
 
   // Create a video element
   var videoElement = document.createElement('video')
-  videoElement.src = './assets/videosite_mads.mp4'
+  videoElement.src = 'https://mheitmann.dk/assets/videosite_mads.mp4'
   videoElement.controls = true // Show video controls
 
   // Set the video dimensions to match the image
