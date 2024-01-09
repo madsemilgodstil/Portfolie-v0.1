@@ -59,7 +59,7 @@ section {
 @font-face {
   font-family: font1;
   src: url(/font/grinched_2.0_demo-webfont.woff);
-  src: url(/https://mheitmann.dk/font/grinched_2.0_demo-webfont.woff2);
+  src: url(/font/grinched_2.0_demo-webfont.woff2);
 }
 
 @font-face {
